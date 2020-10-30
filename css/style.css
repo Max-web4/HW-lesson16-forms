@@ -1,0 +1,217 @@
+body {
+  width: 1500px;
+}
+.bg {
+  background-image: url(../img/img.png);
+  width: 1500px;
+  height: 866px;
+  margin: 0;
+  padding: 0;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
+  gap: 0px 0px;
+  grid-template-areas:
+    ". title title ."
+    "adress adress contacts contacts"
+    "email email contacts contacts"
+    "phone phone . ."
+    "message message . .";
+}
+
+.title {
+  grid-area: title;
+  position: absolute;
+
+  left: 550px;
+}
+
+.adress {
+  grid-area: adress;
+  margin-top: 300px;
+  margin-left: 100px;
+}
+input[type="text"] {
+  grid-area: adress;
+  width: 500px;
+  height: 50px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+}
+
+.email {
+  grid-area: email;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+input[type="email"] {
+  grid-area: adress;
+  width: 500px;
+  height: 50px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+}
+.phone {
+  grid-area: phone;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+input[type="number"] {
+  grid-area: adress;
+  width: 500px;
+  height: 50px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+}
+.message {
+  grid-area: message;
+  margin-left: 100px;
+  margin-top: 10px;
+}
+
+textarea {
+  width: 500px;
+  height: 250px;
+  background-color: #00c4c4;
+  opacity: 0.5;
+}
+.contacts {
+  grid-area: contacts;
+  position: relative;
+  top: -400px;
+  width: 317px;
+  height: 160px;
+  color: #262626;
+  font-family: Raleway;
+  font-size: 20px;
+
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: left;
+}
+.titleSign {
+  width: 337px;
+  height: 65px;
+  color: #262626;
+  font-family: Raleway;
+  font-size: 90px;
+  font-weight: 700;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 100px;
+  margin: 0 auto;
+}
+.text {
+  width: 342px;
+  height: 41px;
+  color: #262626;
+  font-family: Raleway;
+  font-size: 17px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: center;
+  padding-top: 20px;
+  margin: 0 auto;
+}
+#footer {
+  display: flex;
+  justify-content: space-around;
+  width: 1500px;
+  height: 90px;
+  background-color: #262626;
+  align-items: center;
+}
+.main {
+  font-family: "Raleway - Bold";
+  font-size: 17px;
+  font-weight: 700;
+}
+
+.minor {
+  font-family: Raleway - Light;
+  font-weight: 300;
+}
+
+#Cahee {
+  width: 64px;
+  height: 27px;
+  color: #b9b9b9;
+  font-family: Pacifico;
+  font-size: 25px;
+  font-weight: 400;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: right;
+}
+
+span {
+  color: #ff2b58;
+  font-family: "Raleway - Bold";
+  font-weight: 700;
+}
+#made {
+  width: 192px;
+  height: 14px;
+  color: #b9b9b9;
+  font-family: Raleway;
+  font-size: 15px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: left;
+  font-family: "Raleway - Light";
+  font-weight: 300;
+}
+
+#company {
+  width: 259px;
+  height: 16px;
+  color: #b9b9b9;
+  font-family: Raleway;
+  font-size: 16px;
+  font-weight: 300;
+  font-style: normal;
+  letter-spacing: normal;
+  line-height: 25px;
+  text-align: left;
+}
+
+input:focus {
+  opacity: 1;
+  border-left: 3px solid #262626;
+}
+
+input,
+textarea {
+  outline: none;
+  border: none;
+}
+
+.phoneCont {
+  margin-top: 15px;
+  margin-bottom: 15px;
+}
+textarea:focus {
+  opacity: 1;
+  border-left: 3px solid #262626;
+}
+
+input[type="number"] {
+  -moz-appearance: text;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
